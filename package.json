@@ -1,0 +1,23 @@
+{
+  "name": "myob",
+  "version": "1.0.0",
+  "description": "Myob Coding Test ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/crespo-wang/myob-test.git"
+  },
+  "keywords": [
+    "MYOB"
+  ],
+  "author": "Crespo Wang",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/crespo-wang/myob-test#readme",
+  "dependencies": {
+    "compression": "^1.6.2",
+    "express": "^4.13.4"
+  }
+}

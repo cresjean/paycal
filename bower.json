@@ -1,0 +1,21 @@
+{
+  "name": "myob",
+  "description": "Myob Coding Test",
+  "main": "app.js",
+  "authors": [
+    "Crespo Wang"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "MYOB"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

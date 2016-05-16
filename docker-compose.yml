@@ -1,0 +1,8 @@
+myob:
+  build: .
+  ports:
+    - "80:80"
+  volumes:
+    - ./start.sh:/opt/myob/start.sh
+    - ./public:/opt/myob/public
+    - ./app.js:/opt/myob/app.js
