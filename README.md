@@ -10,7 +10,7 @@ This is the codebase for MYOB coding test
 * Git clone this project to your local machine
 * Cd into the project and run docker-compose up -d
 
- ```
+```
 #!bash
 cd myob-test
 docker-compose up -d
