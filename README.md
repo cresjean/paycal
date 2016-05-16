@@ -1,29 +1,20 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+This is the codebase for MYOB coding test
 
-### What is this repository for? ###
-
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+## Prerequisite
+* [You need to have Docker and docker-compose on your machine](https://docs.docker.com/mac/)
+* You need to have port 80 free
 
 ### How do I get set up? ###
+* Git clone this project to your local machine
+* Cd into the project and run docker-compose up -d
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+```
+#!bash
+cd myob-test
+docker-compose up -d
+```
 
-### Contribution guidelines ###
 
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+* The App is running on your docker-machine IP(if on OSX) or your machine IP(Linux dist) 
