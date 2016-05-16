@@ -17,4 +17,7 @@ docker-compose up -d
 ```
 
 
-* The App is running on your docker-machine IP(if on OSX) or your machine IP(Linux dist)
+* The App is running on your docker-machine IP(if on OSX) or your machine IP(Linux dist), to find out docker-machine IP
+```
+docker-machine ip default
+```
