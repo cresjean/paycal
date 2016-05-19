@@ -6,3 +6,4 @@ myob:
     - ./start.sh:/opt/myob/start.sh
     - ./public:/opt/myob/public
     - ./app.js:/opt/myob/app.js
+    - ./tax/rate.json:/opt/myob/public/rate.json

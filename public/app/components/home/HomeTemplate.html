@@ -1,16 +1,55 @@
 <div class="container-fluid">
-  <div class="row">
-    <div class="col-md-1">.col-md-1</div>
-    <div class="col-md-1">.col-md-1</div>
-    <div class="col-md-1">.col-md-1</div>
-    <div class="col-md-1">.col-md-1</div>
-    <div class="col-md-1">.col-md-1</div>
-    <div class="col-md-1">.col-md-1</div>
-    <div class="col-md-1">.col-md-1</div>
-    <div class="col-md-1">.col-md-1</div>
-    <div class="col-md-1">.col-md-1</div>
-    <div class="col-md-1">.col-md-1</div>
-    <div class="col-md-1">.col-md-1</div>
-    <div class="col-md-1">.col-md-1</div>
-  </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-6">
+            <div class="btn btn-primary" style="position:relative;overflow:hidden;margin:10px">
+                <span>Click to upload CSV</span>
+                <input type="file" file-reader="employees" style="position:absolute;top:0;right:0;margin:0;padding:0;font-size:9vw;cursor:pointer;opacity:0;filter:alpha(opacity=0)" />
+            </div>
+            <table class="table table-striped" ng-show="employees">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Annual Salary</th>
+                        <th>Super Rate %</th>
+                        <th>Payment Duration</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="e in employees">
+                        <td>{{$index + 1}}</td>
+                        <td ng-repeat="item in e">{{item}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="btn btn-primary" ng-click="process()" ng-show="employees" type="submit">Confirm to process</button>
+        </div>
+        <div class="col-xs-12" ng-show="employeesProcessed">
+            <table class="table table-striped" >
+              <thead>
+                  <tr>
+                      <th>#</th>
+                      <th>Name</th>
+                      <th>Pay Period</th>
+                      <th>Gross Income</th>
+                      <th>Income Tax</th>
+                      <th>Net Income</th>
+                      <th>Super</th>
+                  </tr>
+              </thead>
+              <tbody>
+                <tr ng-repeat="e in employeesProcessed" >
+                  <td>{{$index + 1}}</td>
+                  <td ng-class="{'warning': e.error}">{{e.name}}</td>
+                  <td>{{e.period}}</td>
+                  <td>{{e.gross}}</td>
+                  <td>{{e.tax}}</td>
+                  <td>{{e.net}}</td>
+                  <td>{{e.sup}}</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+    </div>
 </div>

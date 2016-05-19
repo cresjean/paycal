@@ -2,6 +2,9 @@ var gulp = require('gulp');
 
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
+var uglify = require('gulp-uglify');
+var streamify = require('gulp-streamify');
+
 
 gulp.task('browserify', function() {
     // Grabs the app.js file
