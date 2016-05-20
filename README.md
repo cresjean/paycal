@@ -28,5 +28,5 @@ Jack, Ma,120000,10,01 March to 31 March
 ```
 
 ### Test
-A sample https://s3-ap-southeast-2.amazonaws.com/myob-coding/pay.csv can be downloaded for test.
-An EC2 is also serving the app at http://ec2-52-64-101-46.ap-southeast-2.compute.amazonaws.com
+* A sample https://s3-ap-southeast-2.amazonaws.com/myob-coding/pay.csv can be downloaded for test.
+* An EC2 is also serving the app at http://ec2-52-64-101-46.ap-southeast-2.compute.amazonaws.com
