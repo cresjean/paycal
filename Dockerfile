@@ -7,11 +7,12 @@ ADD public /opt/myob/public
 ADD package.json /opt/myob
 ADD bower.json /opt/myob
 ADD .bowerrc /opt/myob
+ADD gulpfile.js /opt/myob
 
 # Install NPM and bower packages
 RUN cd /opt/myob \
     && npm install \
-    && npm install -g nodemon \
+    && npm install -g nodemon gulp \
     && gulp browserify
 
 ENV TERM xterm
